@@ -7,10 +7,10 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-const storyText = 'その日は、とても暑かった。なんとinsertx度だった。家を出たinsertyはあまりの暑さに驚いたが、 insertzを全身に身につけているのでそもそも暑さを感じなかった。ここら辺ではよくあることだった。';
+const storyText = 'その日は、とても暑かった。なんと:insertx:度だった。家を出た:inserty:はあまりの暑さに驚いたが、 umeは:insertz:を全身に身につけているのでそもそも暑さを感じなかった。ここら辺ではよくあることだった。';
 const insertX = ['30', '50', '60'];
-const insertY = ['the soup kitchen', 'Disneyland', 'the White House'];
-const insertZ = ['spontaneously combusted', 'melted into a puddle on the sidewalk', 'turned into a slug and crawled away'];
+const insertY = ['小平さん', '津田さん', '鷹の台さん'];
+const insertZ = ['保冷剤', 'ホッカイロ', '小銭'];
 
 randomize.addEventListener('click', result);
 
@@ -28,7 +28,7 @@ function result() {
 
   if (customName.value !== '') {
     const name = customName.value;
-    newStory = newStory.replace('Bob', name);
+    newStory = newStory.replace('ume', name);
   }
 
   if (document.getElementById("uk").checked) {
